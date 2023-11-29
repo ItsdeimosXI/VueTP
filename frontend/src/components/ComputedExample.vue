@@ -1,7 +1,7 @@
 <template>
     <div>
         <input type="text" v-model="mensaje">
-        <h3> {{mensaje}} </h3>
+        <h3 > {{mensaje}} </h3>
         <h3> {{reverse}} </h3>
     </div>
 </template>
