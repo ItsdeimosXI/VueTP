@@ -1,0 +1,15 @@
+version: '3'
+services:
+    frontend:
+        container_name: frontend
+        image: node:lts
+        working_dir: /app
+        entrypoint: /bin/bash
+        ports:
+            - "8080:80"
+        volumes:
+        - ./frontend/:/app
+        tty: true
+        command: -c "npm run dev"
+
+
